@@ -1,5 +1,6 @@
 import React from "react";
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
+import css from "./Profile.styled.module.css"
 
 
 export const profile = ({
@@ -9,35 +10,47 @@ export const profile = ({
     avatar,
     stats: { followers, views, likes }
 }) => {
-    return <div class="profile">
-        <div class="description">
+    return <div className={css.profile}>
+        <div className={css.description}>
             <img
+                className={css.avatar}
                 src={avatar}
                 alt="User avatar"
                 class="avatar"
+                width={100}
+                height={100}
             />
-            <p class="name">{username}</p>
-            <p class="tag">{tag}</p>
-            <p class="location">{location}</p>
+            <p className={css.name}>{username}</p>
+            <p className={css.tag}>{tag}</p>
+            <p className={css.location}>{location}</p>
         </div>
-
-        <ul class="stats">
-            <li>
-                <span class="label">Followers</span>
-                <span class="quantity">{followers}</span>
-            </li>
-            <li>
-                <span class="label">Views</span>
-                <span class="quantity">2000{views}</span>
-            </li>
-            <li>
-                <span class="label">Likes</span>
-                <span class="quantity">{likes}</span>
-            </li>
-        </ul>
+        <div className={css.conatiner}>
+            <ul class="stats">
+                <li className={css.statsItem}>
+                    <span className={css.label}>Followers</span>
+                    <span className={css.quantity}>{followers}</span>
+                </li>
+                <li className={css.statsItem}>
+                    <span className={css.label}>Views</span>
+                    <span className={css.quantity}>2000{views}</span>
+                </li>
+                <li className={css.statsItem}>
+                    <span className={css.label}>Likes</span>
+                    <span className={css.quantity}>{likes}</span>
+                </li>
+            </ul>
+        </div>
     </div>
 
 }
 
+profile.propTypes = {
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired
+};
 
 export default profile
+
+

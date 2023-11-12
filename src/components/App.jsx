@@ -1,14 +1,16 @@
 import Profile from "./profile/Profile.jsx"
 import Statistics from "./statistics/Statistics.jsx"
 import FriendsList from "./friendList/FriendList.jsx"
-// import Transactions from "./transactions/Transactions.jsx"
+import Transactions from "./transactions/Transactions.jsx"
+import Seperator from "./seperator.jsx"
 import user from "./profile/user.json"
 import data from "./statistics/data.json"
 import friends from "./friendList/friends.json"
-// import transactions from "./transactions/transactions.json"
+import transactions from "./transactions/transactions.json"
+
 export const App = () => {
   return (
-    <div>
+    <div className="wrapper">
       <Profile
         username={user.username}
         tag={user.tag}
@@ -16,9 +18,12 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics title="Upload stats" stats={data} />
+      <Seperator />
+      <Statistics stats={data} />
+      <Seperator />
       <FriendsList friends={friends} />
-      {/* <Transactions items={transactions} /> */}
+      <Seperator />
+      <Transactions items={transactions} />
     </div>
   );
 };
