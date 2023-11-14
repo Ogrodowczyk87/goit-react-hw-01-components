@@ -4,6 +4,7 @@ import css from "./Profile.module.css"
 
 
 export const profile = ({
+    profile,
     username,
     tag,
     location,
@@ -48,7 +49,12 @@ profile.propTypes = {
     username: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,
-    avatar: PropTypes.string.isRequired
+    avatar: PropTypes.string.isRequired,
+    stats: PropTypes.shape({
+        followers: PropTypes.number, 
+        views: PropTypes.number, 
+        likes: PropTypes.number, 
+    })
 };
 
 export default profile

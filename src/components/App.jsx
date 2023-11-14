@@ -1,4 +1,4 @@
-import Profile from "./profile/Frofile.jsx"
+import Profile from "./profile/Profile.jsx"
 import Statistics from "./statistics/Statistics.jsx"
 import FriendsList from "./friendList/FriendList.jsx"
 import Transactions from "./transactions/Transactions.jsx"
@@ -21,7 +21,7 @@ export const App = () => {
         stats={user.stats}
       />
       <Seperator />
-      <Statistics stats={data} />
+      <Statistics title={"Statistics"} stats={data} />
       <Seperator />
       <FriendsList friends={friends} />
       <Seperator />

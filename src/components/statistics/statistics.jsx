@@ -2,13 +2,13 @@ import React from "react";
 import PropTypes from 'prop-types';
 import css from "./Statistic.module.css"
 
-export default function statistics({ stats,}) {
+export default function statistics({ stats, title }) {
 
-    const title = "Statistics"
-    
+
     return <div>
         <section className={css.statistics}>
-            <h2 className={css.title}>{title}</h2>
+            {title && <h2 className={css.title}>{title}</h2>}
+            {/* <h2 className={css.title}>{title}</h2> */}
             <ul className={css.statList}>
                 {stats.map(el => (
                     <item className={css.item} key={el.id}>
@@ -23,9 +23,12 @@ export default function statistics({ stats,}) {
 }
 
 statistics.propTypes = {
-    label: PropTypes.string.isRequired,
-    percentage: PropTypes.number.isRequired,
+    title: PropTypes.string,
     isOnline: PropTypes.bool.isRequired,
+    stats: PropTypes.shape({
+        label: PropTypes.string.isRequired,
+        percentage: PropTypes.number.isRequired
+    })
 };
 
 
