@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import css from "./Statistic.styled.module.css"
+import css from "./Statistic.module.css"
 
 export default function statistics({ stats,}) {
 

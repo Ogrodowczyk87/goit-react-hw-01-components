@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import css from "./Transaction.styled.module.css"
+import css from "./Transaction.module.css"
 
 const transactions = ({ items }) => {
     return (

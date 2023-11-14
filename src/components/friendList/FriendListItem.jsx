@@ -1,5 +1,5 @@
 import React from "react";
-import css from "./FriendList.styled.module.css"
+import css from "./FriendList.module.css"
 import PropTypes from 'prop-types';
 
 export default function FriendListItem({ isOnline, avatar, name }) {

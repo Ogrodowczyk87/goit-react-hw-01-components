@@ -1,8 +1,10 @@
-import Profile from "./profile/Profile.jsx"
+import Profile from "./profile/Frofile.jsx"
 import Statistics from "./statistics/Statistics.jsx"
 import FriendsList from "./friendList/FriendList.jsx"
 import Transactions from "./transactions/Transactions.jsx"
+
 import Seperator from "./seperator.jsx"
+
 import user from "./profile/user.json"
 import data from "./statistics/data.json"
 import friends from "./friendList/friends.json"
