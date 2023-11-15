@@ -1,5 +1,5 @@
 import React from "react";
-import css from "./seperator.styled.module.css"
+import css from "./Seperator.module.css"
 
 export const seperator = () => {
     return <div className="seperator">-------------------------------------------------------------------------------------------------------------------------------</div>;

@@ -4,7 +4,6 @@ import css from "./Profile.module.css"
 
 
 export const profile = ({
-    profile,
     username,
     tag,
     location,

@@ -3,7 +3,7 @@ import Statistics from "./statistics/Statistics.jsx"
 import FriendsList from "./friendList/FriendList.jsx"
 import Transactions from "./transactions/Transactions.jsx"
 
-import Seperator from "./seperator.jsx"
+import Seperator from "./Seperator.jsx"
 
 import user from "./profile/user.json"
 import data from "./statistics/data.json"
