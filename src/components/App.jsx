@@ -3,7 +3,6 @@ import Statistics from "./statistics/Statistics.jsx"
 import FriendsList from "./friendList/FriendList.jsx"
 import Transactions from "./transactions/Transactions.jsx"
 
-import Seperator from "./Seperator.jsx"
 
 import user from "./profile/user.json"
 import data from "./statistics/data.json"
@@ -20,11 +19,10 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Seperator />
       <Statistics title={"Statistics"} stats={data} />
-      <Seperator />
+
       <FriendsList friends={friends} />
-      <Seperator />
+
       <Transactions items={transactions} />
     </div>
   );

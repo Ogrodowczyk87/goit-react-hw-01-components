@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import css from "./Profile.module.css"
 
 
-export const profile = ({
+export const Profile = ({
     username,
     tag,
     location,
@@ -44,7 +44,7 @@ export const profile = ({
 
 }
 
-profile.propTypes = {
+Profile.propTypes = {
     username: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,
@@ -56,6 +56,6 @@ profile.propTypes = {
     })
 };
 
-export default profile
+export default Profile
 
 
