@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from 'prop-types';
 import css from "./Transaction.module.css"
 
-const transactions = ({ items }) => {
+const Transactions = ({ items }) => {
     return (
         <table className={css.transactionHistory}>
             <thead>
@@ -26,7 +26,7 @@ const transactions = ({ items }) => {
     );
 };
 
-transactions.propTypes = {
+Transactions.propTypes = {
     items: PropTypes.arrayOf(
         PropTypes.exact({
             id: PropTypes.string.isRequired,
@@ -37,4 +37,4 @@ transactions.propTypes = {
     ).isRequired,
 };
 
-export default transactions;
+export default Transactions;

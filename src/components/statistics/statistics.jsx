@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from 'prop-types';
 import css from "./Statistic.module.css"
 
-export default function statistics({ stats, title }) {
+export default function Statistics({ stats, title }) {
 
 
     return <div>
@@ -22,7 +22,7 @@ export default function statistics({ stats, title }) {
     </div>;
 }
 
-statistics.propTypes = {
+Statistics.propTypes = {
     title: PropTypes.string,
     isOnline: PropTypes.bool.isRequired,
     stats: PropTypes.shape({
