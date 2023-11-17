@@ -26,6 +26,7 @@ Statistics.propTypes = {
     title: PropTypes.string,
     isOnline: PropTypes.bool.isRequired,
     stats: PropTypes.shape({
+        id: PropTypes.string.isRequired,
         label: PropTypes.string.isRequired,
         percentage: PropTypes.number.isRequired
     })
